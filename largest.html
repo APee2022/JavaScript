@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">//we use function only for 2nd method
+		function check(p,q,r) {
+			//we can also write p=a,q=b and r=c but they atomatic assign there value
+          if (p>=q && p>=r) {
+          	return p;
+          }else if (q>=p && q>=r) {
+          	return q;
+          }else{
+          	return r;
+          }
+		}
+		var a = prompt("enter the first number");
+		var b = prompt("enter the second number");
+		var c = prompt("enter the third number");
+		//var x = Math.max(a,b,c);//1st method
+		var x = check(a,b,c);//2nd method
+		console.log(`${a}, ${b}, ${c}: Largest = ${x}`);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

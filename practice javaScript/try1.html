@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	/* Write a JavaScript function that reverse a number. Go to the editor
+      Example x = 32243;
+      Expected Output : 34223*/
+
+   function reverse(a) {
+   	a = a.toString()
+   	var x = a.length;
+   	var newString = [];
+   	for(let i = x-1; i>=0; i--){
+          newString.push(a[i]); 
+   	}
+   	return newString.join('');
+   }
+   document.write(reverse(4568));
+   // here we can not use document.getElementById('demo').innerHTML = reverse("jhgh");
+   // because in whole function we can not define a.
+ </script>
+</body>
+<p id="demo"></p>
+</html>

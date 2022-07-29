@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		var string = prompt("please enter a string");
+		var len = string.length;
+		var msg = 'It is a Palindrome';
+		for(var i = 0; i < len/2; i++){
+			if(string[i] != string[len - 1 -i]){
+				msg = 'It is not a Palindrome';
+			}
+		}
+		console.log(`${string}: ${msg}`);
+	</script>
+</head>
+<body>
+  <h1>What is a Palindrome string?</h1><br>
+  A string is a palindrome if it is read the same from forward or backward. example: dad, lol and madam.
+</body>
+</html>

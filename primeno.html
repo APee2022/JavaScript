@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		var num = prompt("enter a number");
+		if(num == 1){
+			console.log(`${num} is neither prime nor composite number`);
+		}else if(num < 1){
+			console.log(`${num} is not a prime number`);
+		}else if(num == 2){
+			console.log(`${num} is a prime number`);
+		}
+		else{
+			for(var i = 2; i<num; i++){
+				//hum yaha loop chla rahe hai i = 2 se i < num (mtlab jb v hm koi number dalenge(in prompt) tb us number ko 2 se leker us number se ek kam number tk loop chelega)
+
+				// jb hum prompt me 2 dal rahe hai to undefined aa raha hai, because num = 2,and i < num(means i = 1) which is not defined because our loop is started from 2 not from 1.
+				if (num%i == 0) {
+					var res = `${num} is not a prime number`;
+					break;// we using break because when compiler know that it is not a prime number then he stop
+					//The break statement can also be used to jump out of a loop: means jb humara kam ho jay tb hm loop se bahar aa jaye.
+				}else{
+					var res = `${num} is a prime number`;
+				}
+			}
+			console.log(res);
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

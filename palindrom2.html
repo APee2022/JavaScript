@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		  var string = prompt("please enter a string");
+		  var stringArray = string.split('');
+		  var stringArrayRev = stringArray.reverse();
+		  var revString = stringArrayRev.join('');
+		  if(string === revString){
+		  	console.log(`${string}: Is Palindrome`);
+		  }else{
+		  	console.log(`${string}: Is not Palindrome`);
+		  }
+	</script>
+</head>
+<body>
+   <h3>In this palindrome method we are using Array method</h3><br>
+   1. split(): Splits a string and return an array.<br>
+   2. reverse(): Reverse an array.<br>
+   3. join(): Join the array elements and return a string.
+</body>
+</html>

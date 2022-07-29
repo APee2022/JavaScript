@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		var num1 =prompt("enter 1st number");
+		var num2 =prompt("enter 2nd number");
+		var opr = prompt("Select among +,-,x,/");
+
+		switch(opr)
+		{//we have to use parseInt only in addition because + symbole is also used for concatination.
+			case "+":
+			var res = parseInt(num1) + parseInt(num2);
+			console.log(`${num1} + ${num2} = ${res}`);
+			break;
+
+			case "-":
+			var res = parseInt(num1) - parseInt(num2);
+			console.log(`${num1} - ${num2} = ${res}`);
+			break;
+
+			case "x":
+			var res = parseInt(num1) * parseInt(num2);
+			console.log(`${num1} x ${num2} = ${res}`);
+			break;
+
+			case "/":
+			var res = parseInt(num1) / parseInt(num2);
+			console.log(`${num1} / ${num2} = ${res}`);
+			break;
+			default:
+			console.log('Invalid operator');
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

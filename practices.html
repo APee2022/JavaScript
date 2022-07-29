@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function check(){
+            var x = document.getElementById('data').value;
+            var y = document.getElementById('tata').value;
+            if (x == y){
+            	var res = `both are equal`
+            }else if (x>y){
+            	var res = `x is gterter than y`
+            }else if (x<y){
+            	var res = `x is less than y`
+            }else{
+            	var res = `not a number`
+            }
+            document.getElementById('demo').innerText = res;
+		}
+	</script>
+</head>
+<body>
+	<p>This is 'X'</p><br>
+  <input type="number" name="" id="data" ><br>
+  <h1>Vs</h1><br>
+  <p>This is 'Y'</p><br>
+  <input type="number" name="" id="tata" ><br><br>
+  <button onclick="check()">Check</button>
+  <h2 id="demo"></h2>
+</body>
+</html>

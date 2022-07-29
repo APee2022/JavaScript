@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		var number = prompt('enter a  number');
+		 var temp = number;
+		 var noOfDigits = number.toString().length;
+		 var sum = 0;
+		 while(temp>0){
+		 	//console.log(temp);
+		 	var digit = temp%10;
+		 	//console.log(digit);
+            //console.log(digit**3);
+		 	sum += digit**3;
+		 	//console.log(sum);
+		 	temp = parseInt(temp/10);
+		 	//console.log(temp);
+		 	//console.log('..........');
+		 }
+		 if(sum == number){
+		 	console.log(`${number} is an armstrong number`);
+		 }else{
+		 	console.log(`${number} is not an armstrong number`);
+		 }
+	</script>
+</head>
+<body>
+  <h1>What is an Armstrong number?</h1><br>
+  abcd...=an + bn + cn + dn + ..... <br>
+ <br>
+ In the case of an Armstrong number of 3 digits, the sum of cubes of each digit is equal to the number itself. For example, 153 is an Armstrong number because<br>
+ 153 = 1*1*1 + 5*5*5 + 3*3*3.
+</body>
+</html>

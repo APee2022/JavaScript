@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		var string = prompt("please enter a string");
+		const reg = /[aeiou]/gi;
+		//gi is used to define globally means works on both upperCase and lowerCase.
+		var chars = string.match(reg);
+		console.log(chars.join(','));
+		console.log(chars.length);
+	</script>
+</head>
+<body>
+  <h1>What is Rrgex ?</h1><br>
+  Regex is known as regular expression.<br>
+  It is used to match, test and find character(s) from a string.<br>
+  To find vowles:
+  <br>
+  Expression : [aeiou]<br>
+  Modifiers : gi
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		var string = prompt("please enter a string");
+		console.log(string);
+		var testStart = string.startsWith('W');
+		var testEnd = string.endsWith('e');
+		console.log(`starts: ${testStart}`);
+		console.log(`Ends: ${testEnd}`);
+         if(testStart == true && testEnd == true){
+         	console.log(`${string} starts with W and ends with e`);
+         }else if(testStart == true && testEnd == false){
+         	console.log(`${string} starts with W`);
+         }else if(testStart == false && testEnd == true){
+         	console.log(`${string} end with e`);
+         }else{
+         	console.log(`${string} neither starts with W nor ends with e`);
+         }
+	</script>
+</head>
+<body>
+  string.startsWith(): = It will check the first character of the string, and return true or false.<br>
+  string.endsWith(): = It will check the last charcter of the string, and return true or false.
+</body>
+</html>
